@@ -43,7 +43,7 @@ A fully functional **Netflix Clone** web application built using modern frontend
 ## 🧠 What I Learned
 -Integrating Firebase Authentication and Firestore in React
 
--Building responsive UIs with React + Tailwind CSS
+-Building responsive UIs with React
 
 -Animating components with Framer Motion
 
