@@ -40,51 +40,18 @@ A fully functional **Netflix Clone** web application built using modern frontend
 
 ---
 
-## 🧠 Project Structure
-/NETFLIX-CLONE
-├── .firebase/
-│ └── hosting.*
-├── node_modules/
-├── public/
-│ ├── favicon.ico
-│ └── ...
-├── src/
-│ ├── assets/
-│ ├── components/
-│ │ ├── Banner.jsx
-│ │ ├── Card.jsx
-│ │ ├── Navbar.jsx
-│ │ └── ...
-│ ├── pages/
-│ │ ├── Home.jsx
-│ │ ├── Login.jsx
-│ │ ├── Signup.jsx
-│ │ └── ...
-│ ├── App.js
-│ ├── firebase.js
-│ ├── index.js
-│ └── ...
-├── .env
-├── .gitignore
-├── package.json
-├── README.md
-└── tailwind.config.js
+## 🧠 What I Learned
+-Integrating Firebase Authentication and Firestore in React
 
+-Building responsive UIs with React + Tailwind CSS
 
----
+-Animating components with Framer Motion
 
-🧠 What I Learned
-Integrating Firebase Authentication and Firestore in React
+-API data fetching and rendering
 
-Building responsive UIs with React + Tailwind CSS
+-Deploying to Vercel
 
-Animating components with Framer Motion
-
-API data fetching and rendering
-
-Deploying to Vercel
-
-Managing user state globally
+-Managing user state globally
 
 ---
 
@@ -92,5 +59,5 @@ Managing user state globally
 
 ---
 
-**📄 License**
+## 📄 License
 This project is open-source and available under the MIT License.
