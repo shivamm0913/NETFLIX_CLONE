@@ -22,11 +22,12 @@ const Home = () => {
       setSearchResults([]);
       return;
     }
+    const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
     const fetchSearchResults = async () => {
       try {
         const response = await fetch(
-          `https://api.themoviedb.org/3/search/movie?api_key=878dfbfb87b2f460b1da13d49de634ac&query=${trimmedQuery}`
+          `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${trimmedQuery}`
         );
         const data = await response.json();
         setSearchResults(data.results || []); 
