@@ -8,12 +8,21 @@ import info_icon from "../../assets/info_icon.png";
 import TitleCards from "../../components/TitleCards/TitleCards";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "./Auth";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
+  const { currentUser } = useAuth();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!currentUser) {
+      navigate('/login');
+    }
+  }, [currentUser, navigate]);
   useEffect(() => {
     // Trim the search query to handle whitespace
     const trimmedQuery = searchQuery.trim();
