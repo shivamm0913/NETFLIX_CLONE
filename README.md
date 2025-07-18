@@ -55,9 +55,9 @@ A fully functional **Netflix Clone** web application built using modern frontend
 
 ---
 
-🌱 Built with ❤️ by **Shivam Kewat**
+## 📄 License
+This project is open-source and available under the MIT License.
 
 ---
 
-## 📄 License
-This project is open-source and available under the MIT License.
+🌱 Built with ❤️ by **Shivam Kewat**
