@@ -1,0 +1,156 @@
+.navbar {
+  width: 100%;
+  padding: 12px 4%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  z-index: 1000;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    transparent
+  );
+  transition: background-color 0.4s ease;
+}
+
+.nav-dark {
+  background-color: #141414;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar-left .logo {
+  width: 90px;
+}
+
+.navbar-left ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-left ul li {
+  cursor: pointer;
+}
+
+.navbar-right .icons {
+  width: 20px;
+}
+/* Find and REPLACE your existing .navbar-profile:hover rule with this: */
+
+/* This new rule makes the dropdown visible when it has the 'show' class */
+.navbar-profile .dropdown.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* Your existing .navbar-profile and .dropdown styles remain the same */
+.navbar-profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+.navbar-profile .dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: max-content;
+  background-color: #191919;
+  padding: 18px 22px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  text-decoration: underline;
+  z-index: 100; /* Ensure dropdown is on top */
+  transition: visibility 0.2s, opacity 0.2s;
+}
+
+/* ... rest of your CSS file */
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 2px 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.search-input {
+  width: 220px;
+  opacity: 1;
+  padding: 8px 10px;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar-right .icons {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .navbar-left ul {
+    display: none;
+  }
+  
+
+  .navbar-right .icons {
+    cursor: pointer;
+    
+  }
+
+  .search-box {
+    background: transparent;
+    border-color: transparent;
+  }
+  .search-input {
+    width: 0;
+    opacity: 0;
+    padding: 0;
+  }
+  .search-box.active {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: #aaa;
+      margin-left: 25px;
+
+  }
+  .search-box.active .search-input {
+    width: 200px;
+    opacity: 1;
+    padding: 5px 8px;
+    
+  }
+  .search-box.active ~ * {
+    width: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-right > p {
+    display: none;
+  }
+  .search-box.active .search-input {
+    width: 150px;
+  }
+}
