@@ -13,7 +13,7 @@ A fully functional **Netflix Clone** web application built using modern frontend
 ## 🛠️ Key Technologies Used
 
 - ⚛️ **React.js** – Component-based architecture and fast UI rendering
-- 🔥 **Firebase** – For Authentication, Firestore (Realtime Database), and Hosting (if used)
+- 🔥 **Firebase** – For Authentication, Firestore
 - 🌀 **Framer Motion** – Seamless and smooth UI transitions and animations
 - 📡 **TMDB API** – Fetching real-time movie/TV data
 - 📁 **React Router DOM** – Routing between login, home, and detail pages
@@ -28,11 +28,11 @@ A fully functional **Netflix Clone** web application built using modern frontend
   - Signup / Signin using email and password via Firebase
   - Session persistence
 - 🔒 **Firestore Integration**
-  - Stores user data securely (e.g., watchlist, preferences)
+  - Stores user data securely
 - 🔍 **Search Functionality**
   - Search across thousands of movies and shows using TMDB API
 - 🎞️ **Dynamic Movie Categories**
-  - Trending, Top Rated, Originals, and Genre-specific sections
+  - Trending, Top Rated, Originals
 - 💫 **Smooth Animations**
   - Framer Motion for elegant loading and transition effects
 - 📺 **Clean Netflix-like UI**
