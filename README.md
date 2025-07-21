@@ -10,7 +10,7 @@ A fully functional **Netflix Clone** web application built using modern frontend
 
 ## 🚀 Live Demo
 
-**https://netflix-clone-shiv.vercel.app**  
+**https://movie-app-clone-shiv-dev.vercel.app/**  
 
 ---
 
