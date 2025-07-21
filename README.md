@@ -4,6 +4,10 @@ A fully functional **Netflix Clone** web application built using modern frontend
 
 ---
 
+⚠️ **Disclaimer**: This project is built for educational purposes only. It is **not affiliated with, endorsed by, or connected to Netflix** in any way. All content, styling, and APIs used are for learning and demonstration.
+
+---
+
 ## 🚀 Live Demo
 
 **https://netflix-clone-shiv.vercel.app**  
@@ -53,11 +57,19 @@ A fully functional **Netflix Clone** web application built using modern frontend
 
 -Managing user state globally
 
----
-
 ## 📄 License
 This project is open-source and available under the MIT License.
 
 ---
 
 🌱 Built with ❤️ by **Shivam Kewat**
+
+## 🧑‍💻 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/yourusername/netflix-clone.git
+cd netflix-clone
+npm install
+npm run dev
