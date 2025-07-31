@@ -63,13 +63,3 @@ This project is open-source and available under the MIT License.
 ---
 
 🌱 Built with ❤️ by **Shivam Kewat**
-
-## 🧑‍💻 Getting Started
-
-To run the project locally:
-
-```bash
-git clone https://github.com/yourusername/netflix-clone.git
-cd netflix-clone
-npm install
-npm run dev
